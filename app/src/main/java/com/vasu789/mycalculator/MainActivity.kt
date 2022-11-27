@@ -32,6 +32,20 @@ class MainActivity : AppCompatActivity() {
         tvInput?.text="";
     }
 
+    fun onPlusMinus(view: View)
+    {
+        var number = Integer.parseInt(tvInput?.text.toString())
+        number *= -1;
+        tvInput?.text = number.toString()
+    }
+
+    fun onPercentage(view: View)
+    {
+        var number = Integer.parseInt(tvInput?.text.toString())
+        number /= 100;
+        tvInput?.text = number.toString()
+    }
+
     fun onDecimalPoint(view: View)
     {
         if(lastNumeric && !lastDot)

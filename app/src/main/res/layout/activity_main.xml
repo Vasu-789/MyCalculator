@@ -17,6 +17,8 @@
         android:gravity="end|bottom"
         android:padding="10dp"
         android:textSize="48sp"
+        android:textColor="@color/white"
+        tools:text="0"
         />
 
 
@@ -26,58 +28,58 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnAC"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="2dp"
-            android:backgroundTint="@color/appleGrey"
+            android:backgroundTint="@color/appleLightGrey"
             android:background="@drawable/roundbtngrey"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:text="AC"
             android:textSize="30sp"
             android:textColor="@color/black"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPlusMinus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/appleGrey"
+            android:backgroundTint="@color/appleLightGrey"
             android:background="@drawable/roundbtngrey"
             android:layout_weight="1"
             android:layout_margin="2dp"
-            android:onClick="onDigit"
+            android:onClick="onPlusMinus"
             android:text="+/-"
             android:textSize="30sp"
             android:textColor="@color/black"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPercentage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="2dp"
-            android:onClick="onDigit"
+            android:onClick="onPercentage"
             android:text="%"
-            android:backgroundTint="@color/appleGrey"
+            android:backgroundTint="@color/appleLightGrey"
             android:background="@drawable/roundbtngrey"
             android:textSize="30sp"
             android:textColor="@color/black"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="2dp"
             android:onClick="onOperator"
-            android:text="/"
+            android:text="÷"
             android:background="@drawable/roundbtnorange"
             android:backgroundTint="@color/appleOrange"
 
             android:textSize="30sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
     </LinearLayout>
 
@@ -87,7 +89,72 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSeven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:onClick="onDigit"
+            android:text="7"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnEight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:onClick="onDigit"
+            android:text="8"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:onClick="onDigit"
+            android:text="9"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:onClick="onOperator"
+            android:text="*"
+
+            android:backgroundTint="@color/appleOrange"
+            android:background="@drawable/roundbtnorange"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFour"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -95,8 +162,13 @@
             android:layout_margin="2dp"
             android:onClick="onDigit"
             android:text="4"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
 
             android:id="@+id/btnFive"
             android:layout_width="0dp"
@@ -105,8 +177,13 @@
             android:layout_margin="2dp"
             android:onClick="onDigit"
             android:text="5"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSix"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -114,15 +191,25 @@
             android:layout_margin="2dp"
             android:onClick="onDigit"
             android:text="6"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
-        <Button
-            android:id="@+id/btnMultiply"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubtract"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="2dp"
             android:onClick="onOperator"
-            android:text="*"
+            android:text="-"
+
+            android:backgroundTint="@color/appleOrange"
+            android:background="@drawable/roundbtnorange"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
     </LinearLayout>
 
@@ -132,7 +219,7 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnOne"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -140,8 +227,13 @@
             android:layout_margin="2dp"
             android:onClick="onDigit"
             android:text="1"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
 
             android:id="@+id/btnTwo"
             android:layout_width="0dp"
@@ -150,8 +242,13 @@
             android:layout_margin="2dp"
             android:onClick="onDigit"
             android:text="2"
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnThree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -159,53 +256,13 @@
             android:layout_margin="2dp"
             android:onClick="onDigit"
             android:text="3"
-            />
-        <Button
-            android:id="@+id/btnSubtract"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:onClick="onOperator"
-            android:text="-"
-            />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
-        <Button
-            android:id="@+id/btnDot"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:onClick="onDecimalPoint"
-            android:text="."
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
-        <Button
-            android:id="@+id/btnZero"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:onClick="onDigit"
-            android:text="0"
-            />
-        <Button
-
-            android:id="@+id/btnCLR"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:onClick="onClear"
-            android:text="CLR"
-            />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -213,6 +270,11 @@
             android:layout_margin="2dp"
             android:onClick="onOperator"
             android:text="+"
+
+            android:backgroundTint="@color/appleOrange"
+            android:background="@drawable/roundbtnorange"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             />
     </LinearLayout>
 
@@ -222,7 +284,40 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         >
-        <Button
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnZero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="2dp"
+            android:onClick="onDigit"
+            android:text="0"
+            android:gravity="center"
+
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/rectangleroundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:onClick="onDecimalPoint"
+            android:text="."
+
+            android:backgroundTint="@color/appleGrey"
+            android:background="@drawable/roundbtngrey"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnEqual"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -230,8 +325,12 @@
             android:layout_margin="2dp"
             android:onClick="onEqual"
             android:text="="
-            />
 
+            android:backgroundTint="@color/appleOrange"
+            android:background="@drawable/roundbtnorange"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
     </LinearLayout>
 
 </LinearLayout>
